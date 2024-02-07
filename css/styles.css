@@ -1,0 +1,76 @@
+/* -----------------
+Tabla de contenidos:
+--------------------
+1. Fuente ................ 11
+2. Variables ............. 17
+3. Estilos generales ..... 32
+-------------------- 
+*/
+
+
+/* ----- Fuente ----- */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/* ----- Variables ----- */
+:root {
+  /* Colores */
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  /* Tipografía */
+  --font-family: 'Outfit', sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-regular);
+  background-color: var(--light-gray);
+}
+
+
+/* ----------------------------- */
+/* ----- Estilos generales ----- */
+/* ----------------------------- */
+
+.card-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  height: auto;
+  padding: 15px;
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.1)
+}
+
+.card-qr img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-qr h1 {
+  width: 90%;
+  margin-bottom: 0;
+  font-size: 22px;
+  text-align: center;
+  font-weight: var(--font-weight-bold);
+  color: var(--dark-blue);
+}
+
+.card-qr p {
+  width: 90%;
+  font-size: 16px;
+  text-align: center;
+  color: var(--grayish-blue);
+}
