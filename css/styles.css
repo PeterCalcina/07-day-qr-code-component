@@ -74,3 +74,9 @@ body {
   text-align: center;
   color: var(--grayish-blue);
 }
+
+@media (max-width: 768px) {
+ html, body {
+  height: 100%;
+ }
+}
